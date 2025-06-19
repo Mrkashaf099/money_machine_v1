@@ -1,0 +1,33 @@
+name: money_machine_v1
+description: AI-powered automation dashboard for affiliate tracking and task management
+publish_to: 'none'  # Prevents accidental publishing to pub.dev
+
+version: 1.0.0+1  # Version format: <major>.<minor>.<patch>+<build>
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"  # Updated for Flutter 3.x compatibility
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6  # Updated icon library
+  flutter_riverpod: ^2.4.9  # Recommended for state management
+  url_launcher: ^6.1.11  # For opening external links
+  shared_preferences: ^2.2.2  # For local storage
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1  # Improved code analysis
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/  # Optional: For future image assets
+  
+  # Desktop/mobile adaptive settings
+  generate: true  # Enables adaptive icons
+  adaptive_icon:
+    foreground_image: assets/images/adaptive_icon.png  # Optional
+    background_color: "#000000"
